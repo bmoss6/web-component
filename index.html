@@ -1,33 +1,16 @@
 <!doctype html>
+<script src="test.js"></script>
+<script src="index.js"></script>
+
 <html lang="en">
 <head>
    <meta charset="UTF-8">
 </head>
-<body>    
-   <my-search></my-search>
+<body>
+   <search-input></search-input>
 </body>
 </html>
 
-<script>
-"use strict";
-class SearchBtn extends HTMLElement {
 
-   constructor() {
-       super();
-   } 
-   createdCallback(){
-       this.innerHTML = `
-			<input id= "searchit" type="text" name="search" placeholder="Search..">
-			<button id ="searchbut">Search</button>
-           `;
-		
-        var btn = this.querySelector('searchbut');
-        searchbut.addEventListener('click',() => console.log(searchit.value));
-   }
-
-}
-
-var MysearchBtn = document.registerElement("my-search", SearchBtn);
-</script>
 
 <! Template and some code from https://developer.mozilla.org/en-US/docs/Web/Web_Components/Custom_Elements/Custom_Elements_with_Classes#Example >
